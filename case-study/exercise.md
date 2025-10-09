@@ -32,6 +32,32 @@ placeholder
 
 placeholder
 
+## Data sources
+### 1. Streaming data from plant machinery sensors
+
+### 2. Historical project status reports in Excel files
+
+### 3. Data from 3rd party SaaS applications(API with OAuth)
+
+### 4. Finance data from on-premises finance system
+
+
+
+## Data Access & Consumption
+
+### 1. Data Scientists and BI Engineers
+
+### 2. Role based access control
+
+
+## Deployment
+### Terraform for IaaS depoyment
+### DevOps for CI/CD deployment
+
+
+## BAU Support
+### Infrastructure support
+### Data platform support
 
 
 
