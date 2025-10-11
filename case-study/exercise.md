@@ -116,7 +116,6 @@ placeholder
 2. Design a **governed, metadata-driven** data ingestion process.
 3. Use **Auto Loader** for raw ingestion; **DLT** for transformations.
 4. Maintain **control schema & tables** for meta-data driven data processing.
-5. Audit and recovery tables should be limited to platform admins only.
 6. Integrate this framework into your CI/CD and data governance workflow.
 
 
