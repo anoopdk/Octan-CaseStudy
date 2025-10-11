@@ -97,12 +97,14 @@ The aim is to build a parametarized end-to-end orcheatration pipeline that autom
 
 
 
-### **Data Stat Schema Model**
+### **Data Star Schema Model**
 
-![Start Schema Model drawio](https://github.com/user-attachments/assets/00af671d-43be-4d71-a4a8-9f3f89cc2891)
+<img width="743" height="512" alt="image" src="https://github.com/user-attachments/assets/6ee1d13f-9ca3-4c94-b1a0-fb6041e70146" />
 
 
-placeholder
+
+The star schema model is established in the Gold layer.
+
 
 ## **Architectural Detail Design**
 
