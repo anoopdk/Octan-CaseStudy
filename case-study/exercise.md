@@ -83,9 +83,20 @@ Bronze → Silver → Gold ensures progressive refinement and governance.
 
 ### Data Storage & Organisation
 
+The multi-layered data storage architecture is divided into `Bronze`, `Silver`, and `Gold` layers to deliver a traceable, structured, and business-ready data pipeline in the analytics environment.
+
+**Bronze Layer**:
+Raw, unprocessed data is stored in it, being loaded directly from the source systems. Data is preserved in its original form for traceability and debugging. At this stage, limited or no transformation is done. It is primarily utilized by data engineers for ingestion and validation source data.
+
+**Silver Layer**:
+The Silver layer consists of cleaned, standardized, and enriched data. It applies transformations such as data cleaning, standardization, enrichment, and derived column creation, producing data that is uniform and ready for analysis. This layer is mostly utilized by data analysts and data scientists. This layer can also have derived tables which are basically built using table look-ups and joins.
+
+**Gold Layer**:
+The Gold layer contains aggregated, polished, and business-consumable data sets. It consists of data integration, application of business rules, and star schema data modeling for analytics, reporting, and making decisions. Business users, analysts, and data scientists are the primary consumers of this layer.
+
 ![Data Laytout Diagram](https://github.com/user-attachments/assets/8396a753-179c-407f-b130-87acad3c24ff)
 
-Placeholder
+
 
 
 ### Metadata-driven Control Flow
