@@ -110,10 +110,25 @@ The star schema model is established in the Gold layer.
 
 placeholder
 
+#### Implementaiton Recommendations
+1. Maintain separate schemas: `control`, `bronze`, `silver`, `gold`.
+2. Design a **governed, metadata-driven** data ingestion process.
+3. Use **Auto Loader** for raw ingestion; **DLT** for transformations.
+4. Maintain **control schema & tables** for meta-data driven data processing.
+5. Audit and recovery tables should be limited to platform admins only.
+6. Integrate this framework into your CI/CD and data governance workflow.
 
-#### Design Considerations 
 
 ## BAU and Support Considerations
+
+#### Operational Best Practices
+
+- Follow standard event loggin mechanism to capture failures and error.
+- Document processes, how-to articles, log RCA and escalation metrics.
+- Adopt least privilage access policy using Unity Catalog ACLs.
+- Maintain a strategic approach for backfill operations and request history.
+
+
 
 
 
