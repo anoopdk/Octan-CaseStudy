@@ -12,7 +12,7 @@ The data platform to be utilized by Octan must be capable of ingesting and proce
 
 # Proposed Solution
 
-Before coming up with the final architectural design, which will be covered in more detail in the [Architectural Detail Design](architectural-detail-design) section, I plan to divide the solution into several parts in this section.
+Before coming up with the final architectural design, which will be covered in more detail in the [Architectural Detail Design](#architectural-detail-design) section, I plan to divide the solution into several parts in this section.
 
 ### **High Level Architecture**
 
