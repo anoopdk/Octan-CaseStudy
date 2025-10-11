@@ -99,7 +99,8 @@ The aim is to build a parametarized end-to-end orcheatration pipeline that autom
 
 ### **Data Star Schema Model**
 
-<img width="743" height="512" alt="image" src="https://github.com/user-attachments/assets/6ee1d13f-9ca3-4c94-b1a0-fb6041e70146" />
+<img width="726" height="518" alt="image" src="https://github.com/user-attachments/assets/3d750205-336c-4cb2-8188-abce3f0c4b2e" />
+
 
 
 
