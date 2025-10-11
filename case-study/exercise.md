@@ -63,5 +63,34 @@ placeholder
 
 # Proposed Solution
 
+## High Level Architecture
+
+![Data Architecture Diagram](https://github.com/user-attachments/assets/364aca6d-942d-42cd-b21f-f1bd91e08e1a)
+
+Placeholder 
+
+## Data Layers & Objectives
+
+![Data Laytout Diagram](https://github.com/user-attachments/assets/8396a753-179c-407f-b130-87acad3c24ff)
+
+Placeholder
+
+
+## Metadata-driven Control Flow
+
+<img width="827" height="1461" alt="Metadata Control Flow Diagram" src="https://github.com/user-attachments/assets/558139e7-c8fc-42f0-ae15-41aa79dc9869" />
+
+
+Placeholder
+
+
+## Stat Schema Model
+
+![Start Schema Model drawio](https://github.com/user-attachments/assets/00af671d-43be-4d71-a4a8-9f3f89cc2891)
+
+
 placeholder
+
+
+
 
