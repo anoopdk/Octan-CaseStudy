@@ -102,14 +102,17 @@ The aim is to build a parametarized end-to-end orcheatration pipeline that autom
 <img width="726" height="518" alt="image" src="https://github.com/user-attachments/assets/3d750205-336c-4cb2-8188-abce3f0c4b2e" />
 
 
-
-
 The star schema model is established in the Gold layer.
+
+
+
 
 
 ## **Architectural Detail Design**
 
-placeholder
+
+<img width="1034" height="454" alt="image" src="https://github.com/user-attachments/assets/a28305da-3b39-43f2-aa7b-a1b3cfc4815a" />
+
 
 #### Implementaiton Recommendations
 1. Maintain separate schemas: `control`, `bronze`, `silver`, `gold`.
