@@ -123,6 +123,17 @@ The star schema model is established in the Gold layer.
 
 
 
+## Object level security
+
+
+#### Top-Down approach 
+
+#### Bottom-Up approach 
+
+<img width="797" height="299" alt="image" src="https://github.com/user-attachments/assets/20008bba-58d8-4d0d-b2c2-ef952dc198bc" />
+
+
+
 #### Implementaiton Recommendations
 1. Maintain separate schemas: `control`, `bronze`, `silver`, `gold`.
 2. Design a **governed, metadata-driven** data ingestion process.
