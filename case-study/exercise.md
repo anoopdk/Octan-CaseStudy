@@ -119,7 +119,8 @@ The star schema model is established in the Gold layer.
 
 #### Databricks + ADF
 
-<img width="1502" height="624" alt="image" src="https://github.com/user-attachments/assets/ffe77158-3963-4b61-a6ba-4d44671b3ada" />
+<img width="1246" height="523" alt="image" src="https://github.com/user-attachments/assets/0327fda9-f27a-4819-af80-2a960e4a8723" />
+
 
 
 
