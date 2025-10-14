@@ -128,15 +128,16 @@ The star schema model is established in the Gold layer.
 
 Let's chose Databricks as a Data platform and explore the possibilities of achiving Data Security at various granual levels.
 
-#### 1. Objec-Level Permissions
-
-
-
-#### Top-Down approach 
-
-#### Bottom-Up approach 
-
 <img width="797" height="299" alt="image" src="https://github.com/user-attachments/assets/20008bba-58d8-4d0d-b2c2-ef952dc198bc" />
+
+| Security Type | Purpose | Use Case | Implementation Method |
+|--------------|--------------|--------------|--------------|
+| **Object-Level Permissions** | Restrict access to catalogs, schemas, and tables level | Analyst to have full access to all tables under `investments` schema | Unity Catalog permission grants |
+| **Row-Level Security** | Restrict users to see only the data relevant to their role | UK compliance team to have access to see only UK-related records in a global dataset | Functions + Row Filter constraints |
+| **Column-Level Masking** | Mask sensitive data dynamically without removing the column from viewing | Mask client portfolio size to non-business users | Functions + Column constraint |
+
+
+
 
 
 
