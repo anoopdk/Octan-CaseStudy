@@ -138,11 +138,30 @@ Let's chose Databricks as a Data platform and explore the possibilities of achiv
 | **Column-Level Masking** | Mask sensitive data dynamically without removing the column from viewing | Mask client portfolio size to non-business users | Functions + Column constraint |
 
 
+### Designing Access Policy Framework
+
+<img width="671" height="394" alt="image" src="https://github.com/user-attachments/assets/8b9fed99-6b28-4224-8310-294b333150d7" />
+
+
+### Pipeline design and netwrok configuration
+**Databricks + ADF**
+- Use ADF(Self-Hosted Integraiton Runtime) to securely extract on-prem finance data into ADLS Gen2 over a private connection.
+- Use Private Endpoints for ADLS so storage is not internet-exposed.
+- Use a service principal/managed identity at databricks/ADF for pipeline orchestration.
+- Use Azure Key Vault for securing credentials and secrets.
+- Use strict firewall rules to allow private endpoint traffic.
+  
+
+**Databricks Only**
+- Use Azure Key Vault for securing credentials and secrets.
+- Ensure Databricks has private connectivity to the on-prem DB.
+- Use Private link + VNet injestion for Dtaabricks workspaces.
+- Restrict DB firewall to only allow Databricks private IP ranges.
+- Use service principal authentication or managed identity.
 
 
 
-
-#### Implementaiton Recommendations
+## Implementaiton Recommendations
 1. Maintain separate schemas: `control`, `bronze`, `silver`, `gold`.
 2. Design a **governed, metadata-driven** data ingestion process.
 3. Use **Auto Loader** for raw ingestion; **DLT** for transformations.
