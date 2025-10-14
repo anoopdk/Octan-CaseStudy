@@ -113,13 +113,15 @@ The star schema model is established in the Gold layer.
 
 #### Databricks
 
-<img width="1204" height="520" alt="image" src="https://github.com/user-attachments/assets/a2ad3077-dcf4-44d3-b24f-62c71cb476fe" />
+<img width="1085" height="559" alt="image" src="https://github.com/user-attachments/assets/b360bd0f-814d-485b-8cbc-2eb288c7ae39" />
+
 
 
 
 #### Databricks + ADF
 
-<img width="1246" height="523" alt="image" src="https://github.com/user-attachments/assets/0327fda9-f27a-4819-af80-2a960e4a8723" />
+<img width="1106" height="558" alt="image" src="https://github.com/user-attachments/assets/87d8ac0f-6fff-4575-b144-d241e1266776" />
+
 
 
 
@@ -143,7 +145,7 @@ Let's chose Databricks as a Data platform and explore the possibilities of achiv
 <img width="671" height="394" alt="image" src="https://github.com/user-attachments/assets/8b9fed99-6b28-4224-8310-294b333150d7" />
 
 
-### Pipeline design and netwrok configuration
+### Pipeline Configuration and Netwrok Security 
 **Databricks + ADF**
 - Use ADF(Self-Hosted Integraiton Runtime) to securely extract on-prem finance data into ADLS Gen2 over a private connection.
 - Use Private Endpoints for ADLS so storage is not internet-exposed.
