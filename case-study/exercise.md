@@ -113,7 +113,8 @@ The star schema model is established in the Gold layer.
 
 #### Databricks
 
-<img width="1034" height="454" alt="image" src="https://github.com/user-attachments/assets/a28305da-3b39-43f2-aa7b-a1b3cfc4815a" />
+<img width="1204" height="520" alt="image" src="https://github.com/user-attachments/assets/a2ad3077-dcf4-44d3-b24f-62c71cb476fe" />
+
 
 
 #### Databricks + ADF
@@ -123,7 +124,12 @@ The star schema model is established in the Gold layer.
 
 
 
-## Object level security
+## Data Security (Sensitive data masking and access restrictions)
+
+Let's chose Databricks as a Data platform and explore the possibilities of achiving Data Security at various granual levels.
+
+#### 1. Objec-Level Permissions
+
 
 
 #### Top-Down approach 
