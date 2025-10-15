@@ -113,12 +113,19 @@ The star schema model is established in the Gold layer.
 <img width="1106" height="558" alt="image" src="https://github.com/user-attachments/assets/87d8ac0f-6fff-4575-b144-d241e1266776" />
 
 
-### Implementaiton Recommendations
-1. Maintain separate schemas: `control`, `bronze`, `silver`, `gold`.
-2. Design a **governed, metadata-driven** data ingestion process.
-3. Use **Auto Loader** for raw ingestion; **DLT** for transformations.
-4. Maintain **control schema & tables** for meta-data driven data processing.
-6. Integrate this framework into your CI/CD and data governance workflow.
+### Implementaiton Approach
+1. Use Auto Loader for ingestion, feeding raw data into Bronze tables.
+2. Use DLT for managed transformations, applying data quality and governance.
+3. Adopt Delta Lake for all persistent tables to get ACID, schema enforcement, and time travel.
+4. Automate DLT pipelines using Databricks Workflows or Jobs for scheduled execution.
+5. Maintain separate schemas: `control`, `bronze`, `silver`, `gold`.
+6. Design a **governed, metadata-driven** data ingestion process.
+7. Use **Auto Loader** for raw ingestion; **DLT** for transformations.
+8. Maintain **control schema & tables** for meta-data driven data processing.
+9. Version contrrol and collaboration via Azure DevOps/GitHub.
+10. Define and follow best practices around Data Engineering approach.
+11. Integrate this framework into the CI/CD and data governance workflow.
+12. Documentaiton and BAU support.
 
 
 
