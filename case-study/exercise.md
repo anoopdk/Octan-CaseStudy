@@ -113,7 +113,12 @@ The star schema model is established in the Gold layer.
 <img width="1106" height="558" alt="image" src="https://github.com/user-attachments/assets/87d8ac0f-6fff-4575-b144-d241e1266776" />
 
 
-
+### Implementaiton Recommendations
+1. Maintain separate schemas: `control`, `bronze`, `silver`, `gold`.
+2. Design a **governed, metadata-driven** data ingestion process.
+3. Use **Auto Loader** for raw ingestion; **DLT** for transformations.
+4. Maintain **control schema & tables** for meta-data driven data processing.
+6. Integrate this framework into your CI/CD and data governance workflow.
 
 
 
@@ -171,28 +176,21 @@ The primary focus here is to enable the following:
 - Terraform, Azure Biceps or ARM templates.
 - Automated deployments, spin up new envrionments, consistency and version control.
 - Terraform
--   Supports both Azure and Databricks.
--   Parameterize envrionment delpoyment.
--   Integrate with CI/CD (Azure DevOps, GitHub, GitLab)
+  - Supports both Azure and Databricks.
+  - Parameterize envrionment delpoyment.
+  - Integrate with CI/CD (Azure DevOps, GitHub, GitLab)
 
-
-
-## Implementaiton Recommendations
-1. Maintain separate schemas: `control`, `bronze`, `silver`, `gold`.
-2. Design a **governed, metadata-driven** data ingestion process.
-3. Use **Auto Loader** for raw ingestion; **DLT** for transformations.
-4. Maintain **control schema & tables** for meta-data driven data processing.
-6. Integrate this framework into your CI/CD and data governance workflow.
 
 
 ## BAU and Support Considerations
 
 #### Operational Best Practices
 
-- Follow standard event loggin mechanism to capture failures and error.
-- Document processes, how-to articles, log RCA and escalation metrics.
-- Adopt least privilage access policy using Unity Catalog ACLs.
-- Maintain a strategic approach for backfill operations and request history.
+- Enable data pipelines with standard event logging mechanism to capture failures and audit.
+- Document processes, how-to articles, log RCA and define escalation metrics.
+- Adopt least privilage access policy and fine-grain access.
+- Maintain a strategic approach for backfill operations and disaster recovery.
+- Define SLA metrics and 
 
 
 
