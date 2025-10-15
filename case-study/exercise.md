@@ -58,7 +58,7 @@ The Silver layer consists of cleaned, standardized, and enriched data. It applie
 The Gold layer contains aggregated, polished, and business-consumable data sets. It consists of data integration, application of business rules, and star schema data modeling for analytics, reporting, and making decisions. Business users, analysts, and data scientists are the primary consumers of this layer.
 
 
-**Source data storage pattern: /<source system>/<entity>/<yyyy>/<mm>/<dd>/<h>/.....**
+**Source data storage pattern: /{source system}/{entity}/{yyyy}/{mm}/{dd}/{h}/.....**
 
 
 ![Data Laytout Diagram](https://github.com/user-attachments/assets/8396a753-179c-407f-b130-87acad3c24ff)
