@@ -65,23 +65,13 @@ The Gold layer contains aggregated, polished, and business-consumable data sets.
 ### **Metadata-driven Control Flow**
 
 
-**Control Tables** integrates ingestion configuration, recovery, and audit metadata. These tables sits in a seperate schema, helps to govers and Orchestration the data ingesiton pipelines.
+**Control Tables** primarily supports data ingestion, recovery, and audit. These tables resides in a seperate schema, helps in meta-data driven data ingestion, quality control, pipeline orchestration and even star schema modeling.
 
 All control tables fall under the `control` schema.
 
 | Layer | Description |
 |--------|--------------|
 | **Control** | Control tables to drive orchestration |
-
-
-#### control.control_table_spec
-
-**Purpose:** Specifies static configuration for all source table entities.
-
-#### control.operational_recovery_spec
-
-**Purpose:** Manages backfill and operational recovery runs.
-
 
 
 
