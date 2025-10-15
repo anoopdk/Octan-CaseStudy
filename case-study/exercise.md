@@ -10,11 +10,15 @@ Octan digital transaformation scenario
 The data platform to be utilized by Octan must be capable of ingesting and processing different data sources like real-time streaming data from plant machine sensors, historical project reports in Excel sheets, third-party SaaS application data securely exposed through API with OAuth authentication, and sensitive financial data from on-prem systems with strong access controls. The platform must enable data scientists and BI engineers to conduct analysis autonomously, with reduced dependency on data engineers. It should also enable secure, role-based access control, with consideration of data sensitivity. The platform should be efficiently scalable and redeployable easily. Last but not least, the solution must be supportable and operationally maintained by Octan's data engineering and infrastructure teams to ensure long-term sustainability and governance.
 
 
+
+
 # Proposed Solution
 
 Before coming up with the final architectural design, which will be covered in more detail in the [Architectural Detail Design](#architectural-detail-design) section, I plan to divide the solution into several parts in this section.
 
 ### **High Level Architecture**
+
+<img width="861" height="453" alt="Octan--Data Architecture Diagram drawio" src="https://github.com/user-attachments/assets/732ecbe3-3248-41b3-a7da-91fbeadf0b35" />
 
 The framework follows the **Medallion architecture** that represents a structured data processing approach from source systems through to consumption layers.
 
@@ -41,10 +45,13 @@ Data Science, Business Intelligence tools, and Machine Learning applications con
 
 Bronze → Silver → Gold ensures progressive refinement and governance.
 
-<img width="861" height="453" alt="Octan--Data Architecture Diagram drawio" src="https://github.com/user-attachments/assets/732ecbe3-3248-41b3-a7da-91fbeadf0b35" />
+
+
 
 
 ### **Data Storage & Organisation**
+
+![Data Laytout Diagram](https://github.com/user-attachments/assets/8396a753-179c-407f-b130-87acad3c24ff)
 
 The multi-layered data storage architecture is divided into `Bronze`, `Silver`, and `Gold` layers to deliver a traceable, structured, and business-ready data pipeline in the analytics environment.
 
@@ -61,13 +68,14 @@ The Gold layer contains aggregated, polished, and business-consumable data sets.
 **Source data storage pattern: /{source system}/{entity}/{yyyy}/{mm}/{dd}/{h}/.....**
 
 
-![Data Laytout Diagram](https://github.com/user-attachments/assets/8396a753-179c-407f-b130-87acad3c24ff)
+
 
 
 
 
 ### **Metadata-driven Control Flow**
 
+<img width="827" height="1461" alt="Metadata Control Flow Diagram" src="https://github.com/user-attachments/assets/558139e7-c8fc-42f0-ae15-41aa79dc9869" />
 
 **Control Tables** primarily supports data ingestion, recovery, and audit. These tables resides in a seperate schema, helps in meta-data driven data ingestion, quality control, pipeline orchestration and even star schema modeling.
 
@@ -79,14 +87,16 @@ All control tables fall under the `control` schema.
 
 
 
-<img width="827" height="1461" alt="Metadata Control Flow Diagram" src="https://github.com/user-attachments/assets/558139e7-c8fc-42f0-ae15-41aa79dc9869" />
+
 
 #### Pipeline Orchestration 
+
+<img width="792" height="636" alt="image" src="https://github.com/user-attachments/assets/f014e854-2055-41e9-b36e-94b092104aba" />
 
 The aim is to build a parametarized end-to-end orcheatration pipeline that automaties the full Medallion architecture workflow, driven my control tabels via metadata information from Bronze to Silver to Gold layers, ensuring scalable, reuable, and parallel execution capability. 
 
 
-<img width="792" height="636" alt="image" src="https://github.com/user-attachments/assets/f014e854-2055-41e9-b36e-94b092104aba" />
+
 
 
 
@@ -109,12 +119,18 @@ The star schema model is established in the Gold layer.
 
 <img width="1085" height="559" alt="image" src="https://github.com/user-attachments/assets/b360bd0f-814d-485b-8cbc-2eb288c7ae39" />
 
+Databricks focused data platform.
+
 
 
 
 #### Databricks + ADF
 
 <img width="1106" height="558" alt="image" src="https://github.com/user-attachments/assets/87d8ac0f-6fff-4575-b144-d241e1266776" />
+
+Azure ADF and Databricks integrated data platform.
+
+
 
 
 ### Implementaiton Approach
