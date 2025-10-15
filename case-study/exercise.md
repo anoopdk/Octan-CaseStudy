@@ -117,7 +117,8 @@ The star schema model is established in the Gold layer.
 
 #### Databricks
 
-<img width="1085" height="559" alt="image" src="https://github.com/user-attachments/assets/b360bd0f-814d-485b-8cbc-2eb288c7ae39" />
+<img width="1274" height="652" alt="image" src="https://github.com/user-attachments/assets/f0c598a1-1a6a-4e16-bcdc-e6583d02ffb2" />
+
 
 Databricks focused data platform.
 
