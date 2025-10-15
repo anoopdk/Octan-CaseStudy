@@ -197,6 +197,12 @@ The primary focus here is to enable the following:
 - Documentation and book-keeping.
 
 
+## DevOps CI/CD Process
+
+<img width="858" height="611" alt="image" src="https://github.com/user-attachments/assets/4f610458-70d5-45e4-9822-5c36313c41f6" />
+
+
+
 
 ## Infrastructure as Code (IaC) 
 
