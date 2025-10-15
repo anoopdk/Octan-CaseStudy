@@ -140,7 +140,7 @@ Let's chose Databricks as a Data platform and explore the possibilities of achiv
 | **Column-Level Masking** | Mask sensitive data dynamically without removing the column from viewing | Mask client portfolio size to non-business users | Functions + Column constraint |
 
 
-### Designing Access Policy Framework
+### Access Policy Framework (Role-based access model)
 
 <img width="671" height="394" alt="image" src="https://github.com/user-attachments/assets/8b9fed99-6b28-4224-8310-294b333150d7" />
 
@@ -160,6 +160,30 @@ Let's chose Databricks as a Data platform and explore the possibilities of achiv
 - Use Private link + VNet injestion for Dtaabricks workspaces.
 - Restrict DB firewall to only allow Databricks private IP ranges.
 - Use service principal authentication or managed identity.
+
+
+## Self-service Data Platform (Data Scientist + BI)
+
+The primary focus here is to enable the following:
+
+- Find the data they need, data discovery.
+- Understand what the data means, data cataloging and lineage.
+- Access it easily with proper permissions
+- Easily access data via tools like Power BI, Dataricks SQL etc.
+- Organizing data into semantic layer.
+- Provide clean, quality, and standardized datasets.
+- Documentation and book-keeping.
+
+
+
+## Infrastructure as Code (IaC) 
+
+- Terraform, Azure Biceps or ARM templates.
+- Automated deployments, spin up new envrionments, consistency and version control.
+- Terraform
+-   Supports both Azure and Databricks.
+-   Parameterize envrionment delpoyment.
+-   Integrate with CI/CD (Azure DevOps, GitHub, GitLab)
 
 
 
